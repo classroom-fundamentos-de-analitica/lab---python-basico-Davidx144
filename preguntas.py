@@ -23,7 +23,18 @@ datoscsv = [line.replace("\n", "") for line in datos]
 datosPreparados = [line.split("\t") for line in datoscsv]
 
 
+def pregunta_01():
+    """
+    Retorne la suma de la segunda columna.
 
+    Rta/
+    214
+
+    """
+    sum = 0
+    for dato in datosPreparados:
+        sum += int(dato[1])
+    return sum
 
 def pregunta_02():
     """
